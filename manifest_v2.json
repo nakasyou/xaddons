@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "name": "XAddons",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "description": "All-in one Addon for x",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitter.com/*",
+        "https://*.x.com/*"
+      ],
+      "js": [
+        "content_scripts/main.js"
+      ]
+    }
+  ]
+}

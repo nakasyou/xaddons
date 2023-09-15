@@ -1,0 +1,14 @@
+{
+  "addons": [
+    {
+      "name": "View User links",
+      "description": "Make Quote links",
+      "entry": "view_user_actions"
+    },
+    {
+      "name": "Make Quote links",
+      "description": "Make Quote links",
+      "entry": "make_like_links"
+    }
+  ]
+}

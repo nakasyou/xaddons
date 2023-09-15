@@ -1,0 +1,16 @@
+{
+  "name": "xaddons",
+  "type": "module",
+  "scripts": {
+    "dev:v2": "bun run scripts/dev.ts v2"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.246"
+  }
+}
