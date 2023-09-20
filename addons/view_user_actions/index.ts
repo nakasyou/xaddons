@@ -1,8 +1,8 @@
 import { mainTweetLoaded } from "../../utils/tweet"
 import type { Addon } from "../addon"
 
-export default (async ({ document, setOnMove }) => {
-  setOnMove(async () => {
+export default (async ({ wrapper }) => {
+  wrapper.on('move', async () => {
     await mainTweetLoaded()
     const target = document.querySelector('div.r-1r5su4o:nth-child(4)')
     
@@ -15,5 +15,8 @@ export default (async ({ document, setOnMove }) => {
       </div>
     `
     target?.append(injectElement)
-  })
+    console.log(wrapper.getState(), 'x')
+
+  }, 'addon.view_user_actions_0')
+
 }) satisfies Addon

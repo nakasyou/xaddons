@@ -1,6 +1,5 @@
-export interface AddonOptions {
-  document: Document
-  setOnMove: (listener: () => any) => void
-}
-export type Addon = (options: AddonOptions) => void | Promise<void>
+import type { XWrapper } from "../core/x_wrapper"
+export type Addon = (options: {
+  wrapper: XWrapper
+}) => void | Promise<void>
 export const defineAddon = (init: Addon) => init

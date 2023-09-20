@@ -11,6 +11,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.246"
+    "@types/chrome": "^0.0.246",
+    "hono": "^3.6.3"
   }
 }
